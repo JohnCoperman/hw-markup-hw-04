@@ -251,7 +251,7 @@ img {
       
       padding: 200px 0;
       text-align: center;
-      background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("/images/teamwork-day.jpg");
+      background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("./images/teamwork-day.jpg");
       background-position: center;
       object-fit: contain;
       background-color: var(--dark-theme);
