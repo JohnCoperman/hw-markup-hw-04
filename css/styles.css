@@ -1,6 +1,6 @@
 :root {
-      --zeema-blue:#2196f3;
-      --dark-theme:#2F303A;
+      --zeema-blue: #2196f3;
+      --dark-theme: #2F303A;
       --color-white: #FFFFFF;
       --color-gray: #757575;
       --color-onix: #212121;
@@ -11,7 +11,9 @@
       --left-right-dist: 215px;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
       margin: 0;
 }
 
@@ -21,7 +23,7 @@ body {
       letter-spacing: 0.03em;
       color: var(--color-onix);
       background-color: var(--color-white);
-      position:relative;
+      position: relative;
 }
 
 /* ---------------General-styles-----------------*/
@@ -34,6 +36,7 @@ body {
 
 .section {
       padding: 94px 0;
+      margin: auto;
       background-repeat: no-repeat;
 }
 
@@ -45,8 +48,10 @@ body {
 
 .link {
       text-decoration: none;
-      
-}/* margin: inherit; */
+
+}
+
+/* margin: inherit; */
 
 .logo {
       font-family: 'Raleway', sans-serif;
@@ -78,7 +83,8 @@ body {
       border: hidden;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
       color: var(--color-white);
       background-color: var(--zeema-blue);
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -126,7 +132,7 @@ img {
 }
 
 .header-link-list {
-      column-gap:var(--gaps-medium);
+      column-gap: var(--gaps-medium);
 }
 
 /* .header-link-list li:nth-child(n+2) {
@@ -137,8 +143,9 @@ img {
       margin-left: 0;
 } */
 
-.header-link:hover, .header-link:focus {
-      color:var(--zeema-blue);
+.header-link:hover,
+.header-link:focus {
+      color: var(--zeema-blue);
 }
 
 .header-contacts-list {
@@ -158,10 +165,12 @@ img {
       letter-spacing: 0.02em;
       color: var(--color-gray);
       padding: 32px 0;
-      fill: var(--color-gray);
+      display: flex;
+      align-items: center;
 }
 
-.header-contacts-link:hover, .header-contacts-link:focus {
+.header-contacts-link:hover,
+.header-contacts-link:focus {
       color: var(--zeema-blue);
       fill: var(--zeema-blue);
 }
@@ -171,7 +180,7 @@ img {
 }
 
 .contact-icons {
-      fill:currentColor
+      fill: currentColor
 }
 
 /*-------------Contacts---------------*/
@@ -179,7 +188,9 @@ img {
 .footer {
       background-color: var(--dark-theme);
       padding: 60px 0;
-}/* height: 252px; */
+}
+
+/* height: 252px; */
 
 .footer-container {
       display: flex;
@@ -196,14 +207,16 @@ img {
 .socials h3 {
       line-height: 1.14;
       text-transform: uppercase;
-      color:var(--color-white);
+      color: var(--color-white);
       margin-bottom: 20px;
 }
 
 .adress-list {
       flex-direction: column;
       row-gap: 9px;
-}/* .adress-list li:nth-child(-n+2) {
+}
+
+/* .adress-list li:nth-child(-n+2) {
       margin-bottom: 9px;
 } */
 
@@ -211,20 +224,25 @@ img {
       align-items: baseline;
       column-gap: 10px;
 }
+
 .socials-list li {
-      background-color: rgba(256,256,256,0.1);
+      background-color: rgba(256, 256, 256, 0.1);
       border-radius: 50%;
       width: 44px;
       height: 44px;
-      
+
 }
-.socials-list li:hover, .socials-list li:focus {
+
+.socials-list li:hover,
+.socials-list li:focus {
       background-color: var(--zeema-blue);
 }
+
 .socials-link {
       width: 100%;
       height: 100%;
-      fill:var(--color-white);display: flex;
+      fill: var(--color-white);
+      display: flex;
       align-items: center;
       justify-content: center;
 }
@@ -240,21 +258,24 @@ img {
       line-height: 1.71;
       color: rgba(255, 255, 255, 0.6);
 }
-.adress-link:hover, .adress-link:focus {
+
+.adress-link:hover,
+.adress-link:focus {
       color: var(--zeema-blue);
 }
 
 /* ----------------------------HOME---------------------------*/
 
 .hero {
-      
       padding: 200px 0;
       text-align: center;
-      background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("./images/teamwork-day.jpg");
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/teamwork-day.jpg");
       background-position: center;
-      object-fit: contain;
+      max-width: 1600px;
+      
+      background-size: contain;
       background-color: var(--dark-theme);
-} 
+}
 
 .hero-title {
       text-transform: uppercase;
@@ -278,12 +299,12 @@ img {
       height: 50px;
 }
 
-.hero-btn:active, .hero-btn:focus {
+.hero-btn:active,
+.hero-btn:focus {
       background-color: #188CE8;
 }
-/* -------------------features-------------------- */
 
-/* height: 286px; */
+/* -------------------features-------------------- */
 
 .visualy-hidden {
       visibility: hidden;
@@ -342,7 +363,7 @@ img {
 
 .team {
       background-color: #F5F4FA;
-}/* height: 648px; */
+}
 
 .team-list {
       column-gap: var(--gaps-small);
@@ -383,6 +404,7 @@ img {
       justify-content: center;
       column-gap: 10px;
 }
+
 .member-socials li {
       width: 44px;
       height: 44px;
@@ -390,17 +412,21 @@ img {
 }
 
 .member-social-link {
-      width:100%;
-      height:100%;
+      width: 100%;
+      height: 100%;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      fill: var(--color-gray);
+      color: #AFB1B8;
 }
-.member-social-link:hover, .member-social-link:focus {
+.member-social-link svg {
+      fill: currentColor;
+}
+.member-social-link:hover,
+.member-social-link:focus {
       background-color: var(--zeema-blue);
-      fill: var(--color-white);
+      color: var(--color-white);
 }
 
 /* ---------------Regular clients----------------- */
@@ -415,12 +441,12 @@ img {
       height: 92px;
       border: 1px solid #AFB1B8;
       border-radius: 4px;
-      
+
 }
 
-.clients li:hover, .clients li:focus {
+.clients li:hover,
+.clients li:focus {
       border: 1px solid var(--zeema-blue);
-      fill: var(--zeema-blue);
 }
 
 .client-link {
@@ -430,13 +456,17 @@ img {
       align-items: center;
       justify-content: center;
       margin: auto;
-      fill: #AFB1B8;
+      color: #AFB1B8;
 }
 
-.client-link:hover, .client-link:focus {
-      fill: var(--zeema-blue);
+.client-link svg {
+      fill: currentColor;
 }
-/* border: 1px solid var(--zeema-blue); */
+
+.client-link:hover,
+.client-link:focus {
+      color: var(--zeema-blue);
+}
 
 /*-------------------------PORTFOLIO--------------------------*/
 
@@ -463,21 +493,24 @@ img {
 
 .project-list {
       flex-wrap: wrap;
-      justify-content: center;
       gap: var(--gaps-small);
-      
+
 }
 
 .project-list .project {
+      width: 370px;
       background: var(--color-white);
       border: 1px solid #EEEEEE;
 }
 
-
-.project:hover, .project:focus {
+.project .link:hover,
+.project .link:focus {
+      display:block;
+      width: 100%;
+      height: 100%;
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-      0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* width: 370px;
@@ -509,4 +542,3 @@ img {
       color: var(--color-gray);
       margin-top: 4px;
 }
-
